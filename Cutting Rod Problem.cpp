@@ -18,9 +18,7 @@ int rodCutting(int lengths[], int profits[], int m, int actualLength)
                 dp[i][j] = dp[i-1][j];
 
             else
-            {
                 dp[i][j] = max(dp[i-1][j], profits[i] + dp[i][j - lengths[i]]);
-            }
 
         }
     }
